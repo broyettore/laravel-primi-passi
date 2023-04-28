@@ -1,0 +1,120 @@
+/************ RESET ****************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /*colors*/
+    --primary-color: #181818;
+    --secondary-color: #fefefe;
+    --alt-color: #03d36b;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/********** COMMON ***********/
+
+ul {
+    list-style-type: none;
+}
+
+button,  a {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: .625rem;
+}
+
+/********** Header ***********/
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+header ul li {
+    font-size: 1.1rem;
+    padding: 0.625rem;
+    margin: 0.625rem;
+}
+
+header ul li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+header a {
+    color: var(--secondary-color);
+}
+
+header a:hover {
+    color: var(--alt-color);
+    transition: color .40s;
+}
+
+/********** main ***********/
+
+main {
+    height: calc(100vh - 81px);
+}
+
+main > .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left, .right {
+    height: 80%;
+    width: 45%;
+    border-radius: 30px;
+}
+
+.left {
+    background-color: #3e3e3e;
+    padding: 2rem;
+}
+
+.left h2 {
+    margin-bottom: 30px;
+}
+
+.left p {
+    font-size: 1.1rem;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.left small {
+    font-size: 0.9rem;
+}
+
+.right img {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}
+

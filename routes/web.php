@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    /**** variables ****/
+    $headerTitle = "Lara Start";
+    $listItem1 = "About";
+    $listItem2 = "Services";
+    $listItem3 = "Contact";
+
+    return view('index', compact("headerTitle", "listItem1", "listItem2", "listItem3"));
 });
